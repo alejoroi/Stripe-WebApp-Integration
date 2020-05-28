@@ -64,8 +64,8 @@ app.post('/payment', (req,res) =>{
             console.log(charge);
 
             let mailOptions = {
-              from:'alexandrevelandia@gmail.com',
-              to:'alejos13@hotmail.com',
+              from:'testfrom@gmail.com',
+              to:'totest@hotmail.com',
               subject:'Congratulations! :)',
               html:'<h2>Email is working</h2><br>'
               +'Email: '+req.body.stripeEmail +'<br>'
@@ -80,8 +80,8 @@ app.post('/payment', (req,res) =>{
               console.log("Stripe Error:", err);
 
               let mailOptions = {
-                from:'alexandrevelandia@gmail.com',
-                to:'alejos13@hotmail.com',
+                from:'testfrom@gmail.com',
+                to:'totest@hotmail.com',
                 subject:'Bad News :(',
                 html:'<h2>Something is wrong with your card.</h2>'
             };
